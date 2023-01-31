@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Effra Bold";
+    src: url(./asset/fonts/Effra_Std_Lt.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Effra Bold";
+    src: url(./asset/fonts/Effra_Std_Rg.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Effra Bold";
+    src: url(./asset/fonts/Effra_Std_Bd.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Effra Bold";
+    src: url(./asset/fonts/Effra_Std_He.ttf);
+    font-weight: 700;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor-1: #FF594E;
+    --cor-2: #484B57;
+    --cor-3: #3B4157;
+    --cor-4: white;
+    --cor-5: #F5F5F5;
+
+    font-size: 62.5%;
+}
+
+body *{
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+body {
+    font-size: 1.6rem;
+    max-width: 144rem;
+    margin: auto;
+}
+
+
+nav {  
+    height: 4rem;
+    display: flex;
+ 
+}
+.title-sec-1 {
+    font-size: 4rem;
+    color: var(--cor-2);
+    margin: 2rem auto 1rem;
+}
+
+
+.paragrafo-sec-1 {
+    background: #1fab36;
+    color: white;
+    font-family: "Roboto Slab";
+    font-weight: 200;
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.logo-doutor {
+    display: block;
+    margin: auto;
+}
+
+.section-1 {
+    background: url("./asset/background-desktop.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+}
+.container-1 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.btn-seta{
+    margin: 1rem auto;
+}
+
