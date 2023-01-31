@@ -48,8 +48,10 @@ body {
 
 
 nav {  
-    height: 4rem;
+
+    height: 6rem;
     display: flex;
+    align-items: center;
  
 }
 .title-sec-1 {
