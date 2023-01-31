@@ -183,6 +183,9 @@ nav {
 }
 .caixa-checkbox {
     background: #e5e7e7;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
 }
 .btn-comprar {
@@ -204,4 +207,35 @@ nav {
 .title-oferta-2 {
     font-size: 4rem;
     color: white;
+}
+
+.lista-assinatura li{
+position: relative;
+padding: 1rem 1rem 1rem 4rem;
+
+}
+.lista-assinatura li::before{
+    position: absolute;
+    padding: 1rem;
+    content: '';
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background: url(./asset/check-icon.png) no-repeat;
+    background-position: center center;
+}
+.caixa-pacote {
+    display: flex;
+    gap: 2rem;
+}
+.caixa-pacote > div{
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: auto;
+    
+
 }
