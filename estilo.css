@@ -1,22 +1,22 @@
 @font-face {
     font-family: "Effra Bold";
-    src: url(./asset/fonts/Effra_Std_Lt.ttf);
+    src: url("./asset/fonts/Effra_Std_Lt.ttf");
     font-weight: 100;
 }
 @font-face {
     font-family: "Effra Bold";
-    src: url(./asset/fonts/Effra_Std_Rg.ttf);
+    src: url("./asset/fonts/Effra_Std_Rg.ttf");
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Effra Bold";
-    src: url(./asset/fonts/Effra_Std_Bd.ttf);
+    src: url("./asset/fonts/Effra_Std_Bd.ttf");
     font-weight: 400;
 }
 @font-face {
     font-family: "Effra Bold";
-    src: url(./asset/fonts/Effra_Std_He.ttf);
+    src: url("./asset/fonts/Effra_Std_He.ttf");
     font-weight: 700;
 }
 
@@ -122,12 +122,14 @@ nav {
 }
 
 .img-do-doutor {
-    display: block;
-    width: 34rem;
-    object-fit: cover;
+    background: url("./asset/doutor-rafael.png") no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 35rem;
     position: absolute;
     right: 0rem;
     bottom: 0rem;
+    display: block;
 
 }
 
@@ -146,7 +148,7 @@ nav {
     color: var(--cor-1)
 }
 .container-2 div:nth-child(2){
-    margin-bottom: 10rem;
+    min-height: 50rem;
     grid-template-columns: 2fr 1fr;
     display: grid;
     align-items: center;
@@ -184,7 +186,7 @@ nav {
 }
 #btn-confirm:checked {
   
-    background: url(./asset/check-icon-green.png) no-repeat;
+    background: url("./asset/check-icon-green.png") no-repeat;
     background-position: center center;
     background-size: 100%;
     
@@ -201,7 +203,7 @@ nav {
     text-align: center;
 }
 .title-oferta {
-    background: url(./asset/mark.svg) no-repeat;
+    background: url("./asset/mark.svg") no-repeat;
     color: white;
     text-transform: uppercase;
     padding: 1rem 2rem;
@@ -236,7 +238,7 @@ text-align: start;
     display: block;
     height: 2rem;
     width: 2rem;
-    background: url(./asset/check-icon.png) no-repeat;
+    background: url("./asset/check-icon.png") no-repeat;
     background-position: center center;
 }
 .caixa-pacote {
@@ -530,4 +532,64 @@ footer {
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .section-1 {
+        background: url("./asset/background-mobile.jpg") no-repeat;
+        background-size: cover;
+       
+    }
+    .caixa-pacote {
+        display: block;
+    }
+    .caixa-de-imagens {
+        display: block;
+    }
+    .caixa-selo-garantia{
+        display: block;
+        padding: 3rem 2rem;
+    }
+    .caixa-doutornature{
+        display: block;
+    }
+    .container-2 div:nth-child(2){
+        display: block;
+        min-height: auto;
+        margin-top: 2rem;
+
+        
+    }
+    .container-footer{
+        display: block;
+        text-align: center;
+    }
+    .container-footer p:nth-child(1) {
+        text-align: justify;
+    }
+    .container-footer img:nth-child(2){
+        margin-bottom: 1rem;
+    }
+    .caixa-de-imagens img, .img-caixa {
+        width: 100%;
+    }
+    .title-sec-1 {
+      
+        margin-bottom: 3rem;
+    }
+    .img-do-doutor {
+
+        background: url("./asset/doutor-rafael-mobile.png")no-repeat;
+        background-position: top center;
+        position: static;
+        width: 100vw;
+        height: 18.4rem;
+        display: block;
+       
+    }
+    .container-footer p:nth-child(3) {
+        justify-content: center;
+    }
+
+
 }
