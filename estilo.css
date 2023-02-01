@@ -35,14 +35,15 @@
 
     font-size: 62.5%;
 }
+ul {
+    list-style: none;
+}
 
 body *{
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Roboto Slab', serif;*/
 }
-ul {
-    list-style: none;
-}
+
 body {
     font-size: 1.6rem;
     max-width: 120rem;
@@ -90,6 +91,12 @@ nav {
     background-position: center center;
 
 }
+.btn-seta {
+    font-size: 2.3rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
 .container-1 {
     max-width: 60rem;
     display: grid;
@@ -136,7 +143,7 @@ nav {
 }
 .container-2 div:first-child span {
     font-size: 1.8rem;
-    color: red;
+    color: var(--cor-1)
 }
 .container-2 div:nth-child(2){
     margin-bottom: 10rem;
@@ -153,7 +160,7 @@ nav {
 
 .txt-span-sec-2 {
     font-weight: 700;
-
+   
 }
 .title-sec-2 {
     font-size: 4rem;
@@ -163,7 +170,7 @@ nav {
 
 .section-3 {
     background-color: var(--cor-3);
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 #btn-confirm {
@@ -210,10 +217,13 @@ nav {
 .lista-assinatura {
     margin: 1.5rem auto;
 }
+
 .lista-assinatura li{
 position: relative;
-padding: 1rem 1rem 1rem 4rem;
+padding: 1rem;
+padding-left: 4rem;
 text-align: start;
+
 
 }
 .lista-assinatura li::before{
@@ -230,7 +240,7 @@ text-align: start;
     background-position: center center;
 }
 .caixa-pacote {
-    margin-top: 6rem;
+    margin-top: 9.5rem;
     display: flex;
     gap: 2rem;
     justify-content: center;
@@ -242,7 +252,7 @@ text-align: start;
     padding: 2rem;
     transition: transform 0.3s linear;
     text-align: center;
-    
+    box-shadow: 0px 0.5rem 1.5rem #0000007a;
 
 }
 .caixa-pacote > div h1 {
@@ -256,11 +266,13 @@ text-align: start;
 
 .caixa-pacote > div:hover{
     transform: scale(1.15);
+    z-index: 1;
 }
 .caixa-assine {
     font-family: "Effra Bold";
     font-weight: 300;
-    color: #625f5c;
+    color: var(--cor-2);
+    position: relative;
 }
 .lista-caixas {
     display: flex;
@@ -325,9 +337,173 @@ text-align: start;
     padding: 1rem 5rem;
     border-radius: 5rem;
     margin: 2rem auto;
-    transition: all 0.3s;
+    transition: background 0.3s;
 }
 .btn-comprar:hover {
-    padding: 1rem 6rem;
-    filter: brightness(1.2);
+
+    background: #ff766d;
+}
+
+.section-4 {
+    padding: 6rem 0;
+    display: grid;
+    gap: 4.5rem;
+}
+.img-badge {
+    position: absolute;
+    top: -5.2rem;
+    right: -0.54rem;
+    width: 8rem;
+}
+
+.title-h1 {
+    line-height: 4.5rem;
+    max-width: 60rem;
+    font-size: 4rem;
+    color: var(--cor-2);
+    margin: auto;
+    text-align: center;
+}
+.legend-h1 {
+    display: block;
+    color: var(--cor-1);
+    font-size: 1.8rem;
+    font-weight: 400;
+  
+}
+.img-selo-garantia {
+    min-width: 14rem;
+}
+.caixa-selo-garantia {
+    max-width: 80rem;
+    display: flex;
+    padding: 3rem 4rem;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 1rem #00000057;
+    gap: 3rem;
+    margin: auto;
+    align-items: center;
+}
+.caixa-selo-garantia > p {
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--cor-2);
+}
+.caixa-selo-garantia > p span {
+    font-weight: 700;
+}
+figure:has(p){
+    max-width: 80rem;
+    margin: auto;
+}
+.caixa-de-imagens {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.caixa-de-imagens img {
+    display: block;
+    width: 35rem;
+    margin: auto;
+}
+
+figure:has(p) p{
+   color: var(--cor-2);
+   font-weight: 300;
+   font-size: 1.2rem;
+   margin: auto;
+   margin-top: 1rem;
+   max-width: 65rem;
+
+
+}
+
+.section-5 {
+    background-color: var(--cor-3);
+    color: white;
+    padding: 6rem 0;
+}
+.section-5 h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sec-5-caixa-duvidas > div {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid white;
+
+    width: min(98%, 80rem);
+    margin: auto;
+}
+.paragrafo-duvida {
+    display: none;
+}
+
+.icone {
+    color: var(--cor-1);
+    margin-right: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.section-6{
+    padding: 6rem 0;
+
+}
+.section-6 h1 {
+    margin-bottom: 2rem;
+}
+.lista-active-antiox {
+    position: relative;
+}
+
+.lista-active-antiox li{
+    padding: 1rem;
+    padding-left: 2rem;
+    text-indent: 1rem;
+   
+    
+    
+}
+
+.lista-active-antiox li:before{
+    position: absolute;
+    left: 0;
+    content: '•';
+    display: block;
+    font-size: 3rem;
+    color: #1fab36;
+    line-height: 2rem;
+}
+
+.caixa-doutornature {
+    display: flex;
+    max-width: 80rem;
+    margin: auto;
+    color: var(--cor-2);
+    font-weight: 300;
+    gap: 2rem;
+   
+}
+.img-caixa {
+    display: block;
+    width: 35rem;
+}
+.p-active-antiox {
+    margin-bottom: 2rem;
+}
+
+footer {
+    color: var(--cor-2);
+    padding: 6rem 0;
+    background: #f5f5f5;
+    font-weight: 300;
+    font-size: 1.4rem;
+   
+}
+.container-footer {
+    max-width: 90rem;
+    margin: auto;
 }
