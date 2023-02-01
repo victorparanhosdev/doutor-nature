@@ -163,15 +163,16 @@ nav {
 
 .section-3 {
     background-color: var(--cor-3);
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 #btn-confirm {
     appearance: none;
     border: 3px solid #fffd00;
-    height: 2.5rem;
+    height: 2rem;
     width: 2.5rem;
-    box-shadow: 2px 2px 20px 0px black
+    box-shadow: 0.1rem 0.1rem 0.4rem 0px #000000d1;
+    cursor: pointer;
 
 }
 #btn-confirm:checked {
@@ -184,13 +185,11 @@ nav {
 .caixa-checkbox {
     background: #e5e7e7;
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
 
 }
-.btn-comprar {
-    background-color: var(--cor-1);
-}
+
 .caixa-oferta {
     text-align: center;
 }
@@ -208,10 +207,13 @@ nav {
     font-size: 4rem;
     color: white;
 }
-
+.lista-assinatura {
+    margin: 1.5rem auto;
+}
 .lista-assinatura li{
 position: relative;
 padding: 1rem 1rem 1rem 4rem;
+text-align: start;
 
 }
 .lista-assinatura li::before{
@@ -228,14 +230,104 @@ padding: 1rem 1rem 1rem 4rem;
     background-position: center center;
 }
 .caixa-pacote {
+    margin-top: 6rem;
     display: flex;
     gap: 2rem;
+    justify-content: center;
 }
 .caixa-pacote > div{
+    max-width: 40rem;
     background: white;
     border-radius: 1rem;
     padding: 2rem;
-    margin: auto;
+    transition: transform 0.3s linear;
+    text-align: center;
     
 
+}
+.caixa-pacote > div h1 {
+    background: #606160;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1.5rem 5rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.caixa-pacote > div:hover{
+    transform: scale(1.15);
+}
+.caixa-assine {
+    font-family: "Effra Bold";
+    font-weight: 300;
+    color: #625f5c;
+}
+.lista-caixas {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 2.5rem auto;
+}
+.lista-caixas li {
+    color: #a6a7a7;
+    background: #e6e7e7;
+    border-radius: 0.5rem;
+    min-width: 10rem;
+    padding: 1.5rem 2rem 0.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.lista-caixas li:hover {
+    background: #1fab36;
+    color: white;
+}
+.lista-caixas li span {
+    font-size: 4rem;
+    font-weight: 500;
+   
+}
+.caixa-de-precos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.caixa-de-precos p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2rem;
+    color: #484b57
+}
+
+.caixa-de-precos p span {
+    font-weight: 300;
+    color: #1fab36;
+    font-size: 1.6rem;
+}
+.btn-comprar {
+    background: var(--cor-1);
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    margin: 2rem auto;
+    transition: all 0.3s;
+}
+.btn-comprar:hover {
+    padding: 1rem 6rem;
+    filter: brightness(1.2);
 }
