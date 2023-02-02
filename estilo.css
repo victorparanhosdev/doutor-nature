@@ -1,686 +1,653 @@
 @font-face {
-    font-family: "Effra Bold";
-    src: url("./asset/fonts/Effra_Std_Lt.ttf");
-    font-weight: 100;
+  font-family: 'Effra Bold';
+  src: url('./asset/fonts/Effra_Std_Lt.ttf');
+  font-weight: 100;
 }
 @font-face {
-    font-family: "Effra Bold";
-    src: url("./asset/fonts/Effra_Std_Rg.ttf");
-    font-weight: 300;
+  font-family: 'Effra Bold';
+  src: url('./asset/fonts/Effra_Std_Rg.ttf');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: "Effra Bold";
-    src: url("./asset/fonts/Effra_Std_Bd.ttf");
-    font-weight: 400;
+  font-family: 'Effra Bold';
+  src: url('./asset/fonts/Effra_Std_Bd.ttf');
+  font-weight: 400;
 }
 @font-face {
-    font-family: "Effra Bold";
-    src: url("./asset/fonts/Effra_Std_He.ttf");
-    font-weight: 700;
+  font-family: 'Effra Bold';
+  src: url('./asset/fonts/Effra_Std_He.ttf');
+  font-weight: 700;
 }
-
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :root {
-    --cor-1: #FF594E;
-    --cor-2: #484B57;
-    --cor-3: #3B4157;
-    --cor-4: white;
-    --cor-5: #F5F5F5;
+  --cor-1: #ff594e;
+  --cor-2: #484b57;
+  --cor-3: #3b4157;
+  --cor-4: white;
+  --cor-5: #f5f5f5;
 
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-body *{
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Roboto Slab', serif;*/
+body * {
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto Slab', serif;*/
 }
 
 body {
-    font-size: 1.6rem;
-    max-width: 144rem;
-    margin: auto;
- 
+  font-size: 1.6rem;
+  max-width: 144rem;
+  margin: auto;
 }
 
-
-nav {  
-
-    height: 4rem;
-    display: flex;
-    align-items: center;
- 
+nav {
+  height: 4rem;
+  display: flex;
+  align-items: center;
 }
 .title-sec-1 {
-    font-size: 4rem;
-    color: var(--cor-2);
-    margin-bottom: 1rem;
+  font-size: 4rem;
+  color: var(--cor-2);
+  margin-bottom: 1rem;
 }
 
-
 .paragrafo-sec-1 {
-    background: #1fab36;
-    color: white;
-    font-family: "Roboto Slab";
-    font-weight: 200;
-    padding: 0 0.5rem;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    text-align: center;
+  background: #1fab36;
+  color: white;
+  font-family: 'Roboto Slab';
+  font-weight: 200;
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .logo-doutor {
-    display: block;
-    margin: auto;
-    height: 2rem;
-    width: 100%;
+  display: block;
+  margin: auto;
+  height: 2rem;
+  width: 100%;
 }
 
 .section-1 {
-    padding: 4rem 0;
-    background: url("./asset/background-desktop.png") no-repeat;
-    background-size: cover;
-    background-position: center center;
-
+  padding: 4rem 0;
+  background: url('./asset/background-desktop.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .btn-seta {
-    font-size: 2.3rem;
-    cursor: pointer;
-    border: none;
-    background: transparent;
+  font-size: 2.3rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
 }
 .container-1 {
-    max-width: 60rem;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    margin: auto;
-
+  max-width: 60rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: auto;
 }
 .container-1 h1 {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 .video-youtube {
-    width: 100%;
-    height: 31.5rem;
-    margin-bottom: 2.5rem;
+  width: 100%;
+  height: 31.5rem;
+  margin-bottom: 2.5rem;
 }
 
-
 .section-2 {
-    position: relative;
-    max-width: 82rem;
-    margin: auto;
-    padding: 4rem 0;
-
-    
+  position: relative;
+  max-width: 82rem;
+  margin: auto;
+  padding: 4rem 0;
 }
 
 .img-do-doutor {
-    background: url("./asset/doutor-rafael.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    width: 35rem;
-    position: absolute;
-    right: 0rem;
-    bottom: 0rem;
-    display: block;
-
+  background: url('./asset/doutor-rafael.png') no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 35rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  display: block;
 }
-
-
 
 .container-2 div:first-child {
-    max-width: 60rem;
-    margin: auto;
-    display: grid;
-    place-items: center;
-    margin-bottom: 2.5rem;
-    gap: 0.5rem;
+  max-width: 60rem;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  margin-bottom: 2.5rem;
+  gap: 0.5rem;
 }
 
-.container-2 div:nth-child(2){
-    min-height: 50rem;
-    grid-template-columns: 2fr 1fr;
-    display: grid;
-    align-items: center;
-
+.container-2 div:nth-child(2) {
+  min-height: 50rem;
+  grid-template-columns: 2fr 1fr;
+  display: grid;
+  align-items: center;
 }
-.container-2 div:nth-child(2) p{
-    color: var(--cor-2);
-    font-size: 1.7rem;
-    max-width: 51rem;
+.container-2 div:nth-child(2) p {
+  color: var(--cor-2);
+  font-size: 1.7rem;
+  max-width: 51rem;
 }
 
 .txt-span-sec-2 {
-    font-weight: 700;
-   
+  font-weight: 700;
 }
 .title-sec-2 {
-    font-size: 4rem;
-    text-align: center;
-    color: var(--cor-2);
+  font-size: 4rem;
+  text-align: center;
+  color: var(--cor-2);
 }
 
 .section-3 {
-    background-color: var(--cor-3);
-    padding: 5rem 0;
+  background-color: var(--cor-3);
+  padding: 5rem 0;
 }
 
 #btn-confirm {
-    appearance: none;
-    border: 3px solid #fffd00;
-    height: 2rem;
-    width: 2.5rem;
-    box-shadow: 0.1rem 0.1rem 0.4rem 0px #000000d1;
-    cursor: pointer;
-
+  appearance: none;
+  border: 3px solid #fffd00;
+  height: 2rem;
+  width: 2.5rem;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0px #000000d1;
+  cursor: pointer;
 }
 #btn-confirm:checked {
-  
-    background: url("./asset/check-icon-green.png") no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    
+  background: url('./asset/check-icon-green.png') no-repeat;
+  background-position: center center;
+  background-size: 100%;
 }
 .caixa-checkbox {
-    background: #e5e7e7;
-    display: flex;
-    padding: 2rem;
-    text-align: center;
-
+  background: #e5e7e7;
+  display: flex;
+  padding: 2rem;
+  text-align: center;
 }
 
 .caixa-oferta {
-    text-align: center;
+  text-align: center;
 }
 .title-oferta {
-    background: url("./asset/mark.svg") no-repeat;
-    color: white;
-    text-transform: uppercase;
-    padding: 1rem 2rem;
-    text-align: center;
-    background-position: center center;
-    margin-top: 2rem;
-  
+  background: url('./asset/mark.svg') no-repeat;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-position: center center;
+  margin-top: 2rem;
 }
 .title-oferta-2 {
-    font-size: 4rem;
-    color: white;
+  font-size: 4rem;
+  color: white;
 }
 .lista-assinatura {
-    margin: 1.5rem auto;
+  margin: 1.5rem auto;
 }
 
-.lista-assinatura li{
-position: relative;
-padding: 1rem;
-padding-left: 4rem;
-text-align: start;
-
-
+.lista-assinatura li {
+  position: relative;
+  padding: 1rem;
+  padding-left: 4rem;
+  text-align: start;
 }
-.lista-assinatura li::before{
-    position: absolute;
-    padding: 1rem;
-    content: '';
-    z-index: 2;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 2rem;
-    width: 2rem;
-    background: url("./asset/check-icon.png") no-repeat;
-    background-position: center center;
+.lista-assinatura li::before {
+  position: absolute;
+  padding: 1rem;
+  content: '';
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background: url('./asset/check-icon.png') no-repeat;
+  background-position: center center;
 }
 .caixa-pacote {
-    margin-top: 9.5rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
+  margin-top: 9.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
-.caixa-pacote > div{
-    width: min(97%, 40rem);
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    transition: transform 0.3s linear;
-    text-align: center;
-    box-shadow: 0px 0.5rem 1.5rem #0000007a;
-
+.caixa-pacote > div {
+  width: min(97%, 40rem);
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s linear;
+  text-align: center;
+  box-shadow: 0px 0.5rem 1.5rem #0000007a;
 }
 .caixa-pacote > div h1 {
-    background: #606160;
-    border-radius: 1rem;
-    text-align: center;
-    padding: 1.5rem 5rem;
-    text-transform: uppercase;
-    color: white;
+  background: #606160;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.5rem 5rem;
+  text-transform: uppercase;
+  color: white;
 }
 
-.caixa-pacote > div:hover{
-    transform: scale(1.15);
-    z-index: 1;
+.caixa-pacote > div:hover {
+  transform: scale(1.15);
+  z-index: 1;
 }
 .caixa-assine {
-    font-family: "Effra Bold";
-    font-weight: 300;
-    color: var(--cor-2);
-    position: relative;
+  font-family: 'Effra Bold';
+  font-weight: 300;
+  color: var(--cor-2);
+  position: relative;
 }
 .lista-caixas {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    margin: 2.5rem auto;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 2.5rem auto;
 }
 .lista-caixas button {
-    color: #a6a7a7;
-    background: #e6e7e7;
-    border-radius: 0.5rem;
-    min-width: 10rem;
-    padding: 1.5rem 2rem 0.5rem;
-    font-size: 1.8rem;
-    line-height: 3rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    transition: all 0.3s;
-    cursor: pointer;
-    border: none;
-    align-items: center;
+  color: #a6a7a7;
+  background: #e6e7e7;
+  border-radius: 0.5rem;
+  min-width: 10rem;
+  padding: 1.5rem 2rem 0.5rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  align-items: center;
 }
 .lista-caixas button:hover {
-    background: #1fab36;
-    color: white;
+  background: #1fab36;
+  color: white;
 }
 .lista-caixas button span {
-    font-size: 4rem;
-    font-weight: 500;
-   
+  font-size: 4rem;
+  font-weight: 500;
 }
 .caixa-de-precos {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    font-size: 1.8rem;
+  align-items: center;
+  font-size: 1.8rem;
 }
 
-.primeiroP, .segundoP {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    
-    color: #484b57
+.primeiroP,
+.segundoP {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+
+  color: #484b57;
 }
-.segundoP{
-    margin-top: 1rem;
+.segundoP {
+  margin-top: 1rem;
 }
 
-.PspanA, .PspanB {
-    font-weight: 300;
-    color: #1fab36;
-    font-size: 1.6rem;
+.PspanA,
+.PspanB {
+  font-weight: 300;
+  color: #1fab36;
+  font-size: 1.6rem;
 }
 
 .btn-comprar {
-    background: var(--cor-1);
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    display: inline-block;
-    text-align: center;
-    padding: 1rem 5rem;
-    border-radius: 5rem;
-    margin: 2rem auto;
-    transition: background 0.3s;
+  background: var(--cor-1);
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 5rem;
+  border-radius: 5rem;
+  margin: 2rem auto;
+  transition: background 0.3s;
 }
 .btn-comprar:hover {
-
-    background: #ff766d;
+  background: #ff766d;
 }
 
 .section-4 {
-    padding: 6rem 0;
-    display: grid;
-    gap: 4.5rem;
+  padding: 6rem 0;
+  display: grid;
+  gap: 4.5rem;
 }
 .img-badge {
-    background: url("./asset/badge.png") no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: -5.2rem;
-    right: -0.54rem;
-    width: 8rem;
+  background: url('./asset/badge.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -5.2rem;
+  right: -0.54rem;
+  width: 8rem;
 }
 
 .title-h1 {
-    line-height: 4.5rem;
-    max-width: 60rem;
-    font-size: 4rem;
-    color: var(--cor-2);
-    margin: auto;
-    text-align: center;
+  line-height: 4.5rem;
+  max-width: 60rem;
+  font-size: 4rem;
+  color: var(--cor-2);
+  margin: auto;
+  text-align: center;
 }
 .legend-h1 {
-    display: block;
-    color: var(--cor-1);
-    font-size: 1.8rem;
-    font-weight: 400;
-  
+  display: block;
+  color: var(--cor-1);
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 .img-selo-garantia {
-    min-width: 14rem;
+  min-width: 14rem;
 }
 .caixa-selo-garantia {
-    width: min(97%, 80rem);
-    display: flex;
-    padding: 3rem 4rem;
-    border-radius: 3rem;
-    box-shadow: 0px 0px 1rem #00000057;
-    gap: 3rem;
-    margin: auto;
-    align-items: center;
+  width: min(97%, 80rem);
+  display: flex;
+  padding: 3rem 4rem;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 1rem #00000057;
+  gap: 3rem;
+  margin: auto;
+  align-items: center;
 }
 .caixa-selo-garantia > p {
-    text-align: justify;
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: var(--cor-2);
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--cor-2);
 }
 .caixa-selo-garantia > p span {
-    font-weight: 700;
+  font-weight: 700;
 }
-figure:has(p){
-    max-width: 80rem;
-    margin: auto;
+figure:has(p) {
+  max-width: 80rem;
+  margin: auto;
 }
 .caixa-de-imagens {
-   
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .caixa-de-imagens img {
-    display: block;
-    width: 35rem;
-    margin: auto;
+  display: block;
+  width: 35rem;
+  margin: auto;
 }
 
-figure:has(p) p{
-   color: var(--cor-2);
-   font-weight: 300;
-   font-size: 1.2rem;
-   margin: auto;
-   margin-top: 1rem;
-   max-width: 65rem;
-
-
+figure:has(p) p {
+  color: var(--cor-2);
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: auto;
+  margin-top: 1rem;
+  max-width: 65rem;
 }
 
 .section-5 {
-    background-color: var(--cor-3);
-    color: white;
-    padding: 6rem 0;
+  background-color: var(--cor-3);
+  color: white;
+  padding: 6rem 0;
 }
 .section-5 h1 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
 }
 
 .sec-5-caixa-duvidas > div {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid white;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid white;
 
-    width: min(98%, 80rem);
-    margin: auto;
+  width: min(98%, 80rem);
+  margin: auto;
 }
 .paragrafo-duvida {
-    display: none;
+  display: none;
 }
 
 .icone {
-    color: var(--cor-1);
-    margin-right: 1.5rem;
-    font-weight: 400;
-    cursor: pointer;
+  color: var(--cor-1);
+  margin-right: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
 }
 
-
-.section-6{
-    padding: 6rem 0;
-
+.section-6 {
+  padding: 6rem 0;
 }
 .section-6 h1 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .lista-active-antiox {
-    position: relative;
+  position: relative;
 }
 
-.lista-active-antiox li{
-    padding: 1rem;
-    padding-left: 2rem;
-    text-indent: 1rem;
-   
-    
-    
+.lista-active-antiox li {
+  padding: 1rem;
+  padding-left: 2rem;
+  text-indent: 1rem;
 }
 
-.lista-active-antiox li:before{
-    position: absolute;
-    left: 0;
-    content: '•';
-    display: block;
-    font-size: 3rem;
-    color: #1fab36;
-    line-height: 2rem;
+.lista-active-antiox li:before {
+  position: absolute;
+  left: 0;
+  content: '•';
+  display: block;
+  font-size: 3rem;
+  color: #1fab36;
+  line-height: 2rem;
 }
 
 .caixa-doutornature {
-    display: flex;
-    max-width: 90rem;
-    margin: auto;
-    color: var(--cor-2);
-    font-weight: 300;
-    gap: 2rem;
-   
+  display: flex;
+  max-width: 90rem;
+  margin: auto;
+  color: var(--cor-2);
+  font-weight: 300;
+  gap: 2rem;
 }
 .img-caixa {
-    display: block;
-    width: 35rem;
-    margin: auto;
+  display: block;
+  width: 35rem;
+  height: 25rem;
+  margin: auto;
+  object-fit: contain;
 }
 .p-active-antiox {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 footer {
-    text-align: justify;
-    color: var(--cor-2);
-    padding: 6rem 0;
-    background: #f5f5f5;
-    font-weight: 300;
-    font-size: 1.4rem;
-   
+  text-align: justify;
+  color: var(--cor-2);
+  padding: 6rem 0;
+  background: #f5f5f5;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 .container-footer {
-    gap: 1rem;
-    max-width: 90rem;
-    margin: auto;
-    display: grid;
-    grid-template-areas: "A A"
-    "B C";
-    grid-auto-columns: 1fr 3fr;
+  gap: 1rem;
+  max-width: 90rem;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    'A A'
+    'B C';
+  grid-auto-columns: 1fr 3fr;
 }
 
-.container-footer p:nth-child(1){
-    grid-area: A;
-    margin-bottom: 3rem;
+.container-footer p:nth-child(1) {
+  grid-area: A;
+  margin-bottom: 3rem;
+}
+.container-footer img:nth-child(2) {
+  width: 18rem;
+  grid-area: B;
+}
+.container-footer p:nth-child(3) {
+  font-size: 1.2rem;
+  grid-area: C;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+::-webkit-scrollbar{
+    background:#3b41573a; ;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--cor-3);
+    border-radius: 5rem;
+   
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(73, 89, 144)
 
+    
 }
-.container-footer img:nth-child(2){
-    width: 18rem;
-    grid-area: B;
-}
-.container-footer p:nth-child(3){
-    font-size: 1.2rem;
-    grid-area: C;
+@media (min-width: 320px) and (max-width: 768px) {
+  :root {
+    font-size: 56.5%;
+  }
+  .section-1 {
+    background: url('./asset/background-mobile.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .caixa-pacote {
+    margin-top: 5rem;
+    display: block;
+  }
+  .caixa-de-imagens {
+    height: 30rem;
     display: flex;
-    justify-content: end;
-    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-block: 1px solid #efefef;
+  }
+  .section-4 {
+    display: block;
+    padding: 5rem 0;
+  }
+
+  .caixa-de-imagens img {
+    min-width: 34rem;
+  }
+  .caixa-de-imagens img:last-child {
+    order: -1;
+  }
+
+  .caixa-de-imagens img:nth-child(3) {
+    order: -1;
+  }
+  .caixa-selo-garantia {
+    margin: 5rem auto 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+  .caixa-doutornature {
+    display: block;
+  }
+  .container-2 div:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: auto;
+    margin-bottom: 2rem;
+  }
+  .container-footer {
+    display: block;
+    text-align: center;
+  }
+  .container-footer p:nth-child(1) {
+    width: 97%;
+    margin: auto;
+    text-align: justify;
+  }
+  .container-footer img:nth-child(2) {
+    margin: 2rem auto;
+  }
+  .img-caixa {
+    margin: 2rem auto 1rem;
+  }
+
+  .title-sec-1 {
+    margin-bottom: 3rem;
+  }
+  .img-do-doutor {
+    background: url('./asset/doutor-rafael-mobile.png') no-repeat;
+    background-position: top center;
+    position: static;
+    width: 100vw;
+    height: 20rem;
+    display: block;
+  }
+  .container-footer p:nth-child(3) {
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  .title-h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .icone {
+    margin-right: 1rem;
+  }
+  .caixa-pacote > div {
+    margin: auto;
+  }
+  .caixa-pacote > div:hover {
+    transform: scale(1);
+  }
+  .caixa-pacote div + div {
+    margin-top: 2rem;
+  }
+  .caixa-pacote > div h1 {
+    font-size: 2rem;
+  }
+  .container-2 div:nth-child(2) p {
+    text-align: justify;
+    width: 97%;
+  }
+
+  .p-active-antiox {
+    text-align: center;
+  }
+  .section-2 {
+    padding: 1rem 0;
+  }
+  .legend-h1 {
+    line-height: 3rem;
+  }
+  .title-oferta {
+    margin-bottom: 3rem;
+  }
+  .img-selo-garantia {
+    width: 17rem;
+  }
+  figure:has(p) p {
+    width: 97%;
+  }
+  .img-badge {
+    display: none;
+  }
 }
-
-@media (min-width: 320px) and (max-width: 768px){
-
-    :root {
-        font-size: 56.5%;
-    }
-    .section-1 {
-        background: url("./asset/background-mobile.jpg") no-repeat;
-        background-size: cover;
-        background-position: center;
-       
-    }
-    .caixa-pacote {
-        margin-top: 5rem;
-        display: block;
-    }
-    .caixa-de-imagens {
-        height: 30rem;
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        border-block: 1px solid #efefef;
-    
-
-    }
-    .section-4 {
-        display: block;
-        padding: 5rem 0;
-    }
-
-    .caixa-de-imagens img {
-        min-width: 34rem;
-    
-
-    }
-    .caixa-de-imagens img:last-child {
-        order: -1;
-    }
-   
-    .caixa-de-imagens img:nth-child(3) {
-        order: -1;
-    }
-    .caixa-selo-garantia{
-        margin: 5rem auto 3rem;
-        display: flex;
-        flex-direction: column;
-        padding: 3rem 2rem;
-    }
-    .caixa-doutornature{
-        display: block;
-    }
-    .container-2 div:nth-child(2){
-        display: flex;
-        flex-direction: column-reverse;
-        min-height: auto;
-        margin-bottom: 2rem;
-
-        
-    }
-    .container-footer{
-        display: block;
-        text-align: center;
-    }
-    .container-footer p:nth-child(1) {
-        width: 97%;
-        margin: auto;
-        text-align: justify;
-    }
-    .container-footer img:nth-child(2){
-        margin: 2rem auto;
-    }
-    .img-caixa {
-        margin: 2rem auto 1rem;
-        width: 100%;
-    }
-  
-    .title-sec-1 {
-      
-        margin-bottom: 3rem;
-    }
-    .img-do-doutor {
-
-        background: url("./asset/doutor-rafael-mobile.png") no-repeat;
-        background-position: top center;
-        position: static;
-        width: 100vw;
-        height: 20rem;
-        display: block;
-       
-    }
-    .container-footer p:nth-child(3) {
-        justify-content: center;
-        font-size: 1.3rem;
-    }
-    .title-h1 {
-        font-size: 3.2rem;
-        line-height: 4rem;
-    }
-    .icone {
-        margin-right: 1rem;
-    }
-    .caixa-pacote > div{
-        margin: auto;
-    }
-    .caixa-pacote > div:hover {
-        transform: scale(1);
-    }
-    .caixa-pacote div + div {
-        margin-top: 2rem;
-    }
-    .caixa-pacote > div h1 {
-        font-size: 2rem;
-    }
-    .container-2 div:nth-child(2) p{
-        text-align: justify;
-        width: 97%;
-    }
-
-   
-    .p-active-antiox {
-        text-align: center;
-    }
-    .section-2 {
-        padding: 1rem 0;
-    }
-    .legend-h1 {
-        line-height: 3rem;
-    }
-    .title-oferta {
-        margin-bottom: 3rem;
-    }
-    .img-selo-garantia {
-        width: 17rem;
-    }
-    figure:has(p) p{
-        width: 97%;
-    }
-    .img-badge {
-        display: none;
-    }
-  
-}
-  
