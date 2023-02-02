@@ -434,7 +434,7 @@ figure:has(p) p {
     transition-timing-function: ease-out;
 
 }
-.sec-5-caixa-duvidas.active .paragrafo-duvida {
+.paragrafo-duvida.active {
     opacity: 1;
     transition-property: max-height, opacity;
     transition-duration: 400ms;

@@ -7,7 +7,7 @@ new Caixinhas()
 
 const btnDuvidas = document.querySelectorAll(".sec-5-caixa-duvidas > div .btn-duvidas")
 
-const cxDuvidas = document.querySelector('.sec-5-caixa-duvidas')
+const cxDuvidas = document.querySelector('.paragrafo-duvida')
 
 
 for(let btn of btnDuvidas){
