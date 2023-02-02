@@ -105,9 +105,6 @@ nav {
     margin: auto;
 
 }
-.container-1 h1 {
-    margin-bottom: 3rem;
-}
 .video-youtube {
     width: 100%;
     height: 31.5rem;
@@ -146,7 +143,10 @@ nav {
     margin-bottom: 2.5rem;
     gap: 0.5rem;
 }
-
+.container-2 div:first-child span {
+    font-size: 1.8rem;
+    color: var(--cor-1)
+}
 .container-2 div:nth-child(2){
     min-height: 50rem;
     grid-template-columns: 2fr 1fr;
@@ -248,7 +248,7 @@ text-align: start;
     justify-content: center;
 }
 .caixa-pacote > div{
-    width: min(97%, 40rem);
+    max-width: 40rem;
     background: white;
     border-radius: 1rem;
     padding: 2rem;
@@ -352,8 +352,6 @@ text-align: start;
     gap: 4.5rem;
 }
 .img-badge {
-    background: url("./asset/badge.png") no-repeat;
-    background-size: 100%;
     position: absolute;
     top: -5.2rem;
     right: -0.54rem;
@@ -379,7 +377,7 @@ text-align: start;
     min-width: 14rem;
 }
 .caixa-selo-garantia {
-    width: min(97%, 80rem);
+    max-width: 80rem;
     display: flex;
     padding: 3rem 4rem;
     border-radius: 3rem;
@@ -431,7 +429,6 @@ figure:has(p) p{
 .section-5 h1 {
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 3rem;
 }
 
 .sec-5-caixa-duvidas > div {
@@ -538,60 +535,28 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 768px){
-
-    :root {
-        font-size: 56.5%;
-    }
     .section-1 {
         background: url("./asset/background-mobile.jpg") no-repeat;
         background-size: cover;
-        background-position: center;
        
     }
     .caixa-pacote {
-        margin-top: 5rem;
         display: block;
     }
     .caixa-de-imagens {
-        height: 30rem;
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        border-block: 1px solid #efefef;
-    
-
-    }
-    .section-4 {
         display: block;
-        padding: 5rem 0;
-    }
-
-    .caixa-de-imagens img {
-        min-width: 34rem;
-    
-
-    }
-    .caixa-de-imagens img:last-child {
-        order: -1;
-    }
-   
-    .caixa-de-imagens img:nth-child(3) {
-        order: -1;
     }
     .caixa-selo-garantia{
-        margin: 5rem auto 3rem;
-        display: flex;
-        flex-direction: column;
+        display: block;
         padding: 3rem 2rem;
     }
     .caixa-doutornature{
         display: block;
     }
     .container-2 div:nth-child(2){
-        display: flex;
-        flex-direction: column-reverse;
+        display: block;
         min-height: auto;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
 
         
     }
@@ -600,82 +565,31 @@ footer {
         text-align: center;
     }
     .container-footer p:nth-child(1) {
-        width: 97%;
-        margin: auto;
         text-align: justify;
     }
     .container-footer img:nth-child(2){
-        margin: 2rem auto;
+        margin-bottom: 1rem;
     }
-    .img-caixa {
-        margin: 2rem auto 1rem;
+    .caixa-de-imagens img, .img-caixa {
         width: 100%;
     }
-  
     .title-sec-1 {
       
         margin-bottom: 3rem;
     }
     .img-do-doutor {
 
-        background: url("./asset/doutor-rafael-mobile.png") no-repeat;
+        background: url("./asset/doutor-rafael-mobile.png")no-repeat;
         background-position: top center;
         position: static;
         width: 100vw;
-        height: 20rem;
+        height: 18.4rem;
         display: block;
        
     }
     .container-footer p:nth-child(3) {
         justify-content: center;
-        font-size: 1.3rem;
-    }
-    .title-h1 {
-        font-size: 3.2rem;
-        line-height: 4rem;
-    }
-    .icone {
-        margin-right: 1rem;
-    }
-    .caixa-pacote > div{
-        margin: auto;
-    }
-    .caixa-pacote > div:hover {
-        transform: scale(1);
-    }
-    .caixa-pacote div + div {
-        margin-top: 2rem;
-    }
-    .caixa-pacote > div h1 {
-        font-size: 2rem;
-    }
-    .container-2 div:nth-child(2) p{
-        text-align: justify;
-        width: 97%;
     }
 
-   
-    .p-active-antiox {
-        text-align: center;
-    }
-    .section-2 {
-        padding: 1rem 0;
-    }
-    .legend-h1 {
-        line-height: 3rem;
-    }
-    .title-oferta {
-        margin-bottom: 3rem;
-    }
-    .img-selo-garantia {
-        width: 17rem;
-    }
-    figure:has(p) p{
-        width: 97%;
-    }
-    .img-badge {
-        display: none;
-    }
-  
+
 }
-  
