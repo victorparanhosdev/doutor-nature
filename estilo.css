@@ -411,6 +411,9 @@ figure:has(p) p {
   font-size: 3rem;
 }
 
+.sec-5-caixa-duvidas > div > span {
+    cursor: pointer;
+}
 .sec-5-caixa-duvidas > div {
   padding: 1.5rem 0;
   border-bottom: 1px solid white;
@@ -419,14 +422,33 @@ figure:has(p) p {
   margin: auto;
 }
 .paragrafo-duvida {
-  display: none;
+    color: var(--cor-1);
+    font-size: 1.4rem;
+    /*margin: 1rem auto auto 2.5rem;*/
+    text-align: justify;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    max-height: 0;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+
+}
+.sec-5-caixa-duvidas.active .paragrafo-duvida {
+    opacity: 1;
+    transition-property: max-height, opacity;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in;
+    visibility: visible;
+    max-height: 40rem;
+    margin: 1rem auto auto 2.5rem;
 }
 
 .icone {
   color: var(--cor-1);
   margin-right: 1.5rem;
   font-weight: 400;
-  cursor: pointer;
+
 }
 
 .section-6 {
@@ -566,6 +588,7 @@ footer {
     padding: 3rem 2rem;
   }
   .caixa-doutornature {
+
     display: block;
   }
   .container-2 div:nth-child(2) {
@@ -575,11 +598,12 @@ footer {
     margin-bottom: 2rem;
   }
   .container-footer {
+    width: 95%;
     display: block;
     text-align: center;
   }
   .container-footer p:nth-child(1) {
-    width: 97%;
+    
     margin: auto;
     text-align: justify;
   }
@@ -650,4 +674,11 @@ footer {
   .img-badge {
     display: none;
   }
+  .sec-5-caixa-duvidas > div {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px){
+
 }
