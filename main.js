@@ -5,7 +5,8 @@ class Caixinhas {
             caixa1: document.querySelector('.lista-caixas button:nth-child(1)'),
             caixa2: document.querySelector('.lista-caixas button:nth-child(2)'),
             caixa3: document.querySelector('.lista-caixas button:nth-child(3)'),
-            corpo: document.querySelector('.caixa-de-precos')
+            corpo: document.querySelector('.caixa-de-precos'),
+            caixa4: document.querySelector('.img-caixa')
         }
         
 
@@ -20,7 +21,8 @@ class Caixinhas {
             PspanA: "Economize R$ 100,00",
             segundoP: "HOJE 12x R$ 35,00",
             PspanB: "ou R$ 360,00 à vista",
-            cor: "background: #1fab36; color: white;"
+            cor: "background: #1fab36; color: white;",
+            imagem: "./asset/aaox-1.png"
             
            
         },
@@ -30,6 +32,7 @@ class Caixinhas {
             segundoP: "HOJE 12x R$49.90",
             PspanB: "ou R$445,80 à vista",
             cor: "background: #1fab36; color: white;",
+            imagem: "./asset/aaox-3.png"
      
         },
         {
@@ -37,7 +40,8 @@ class Caixinhas {
             PspanA: "Economize R$ 500,00",
             segundoP: "HOJE 12x R$ 88,00",
             PspanB: "ou R$ 860,00 à vista",
-            cor: "#1fab36; color: white;"
+            cor: "#1fab36; color: white;",
+            imagem: "./asset/aaox-6.png"
          
             
         },
@@ -45,19 +49,26 @@ class Caixinhas {
     }
 
     clicar(){
-
         this.lista.caixa1.addEventListener('click', (event) => {
             this.update(0)
-          
-        })
-        this.lista.caixa2.addEventListener('click', (event) => {
-            this.update(1)
+            this.lista.caixa4.src = this.dados[0].imagem
+             this.lista.caixa4.alt = `imagem da caixa 1`
     
         })
-        this.lista.caixa3.addEventListener('click', (event) => {
-            this.update(2)
-            
-        })
+
+    this.lista.caixa2.addEventListener('click', (event) => {
+        this.update(1)
+        this.lista.caixa4.src = this.dados[1].imagem
+        this.lista.caixa4.alt = `imagem da caixa 3`
+
+    })
+    this.lista.caixa3.addEventListener('click', (event) => {
+        this.update(2)
+        this.lista.caixa4.src = this.dados[2].imagem
+        this.lista.caixa4.alt = `imagem da caixa 6`
+        
+    })
+
     }
 
     update(index) {
@@ -67,7 +78,8 @@ class Caixinhas {
         div.querySelector(".PspanA").textContent = this.dados[index].PspanA
         div.querySelector(".segundoP").textContent = this.dados[index].segundoP
         div.querySelector(".PspanB").textContent = this.dados[index].PspanB
-        this.lista.corpo.style.background = this.dados[index].cor
+        
+
         this.lista.corpo.append(div)    
 
         
