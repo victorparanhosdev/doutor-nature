@@ -500,7 +500,6 @@ figure:has(p) p{
 .img-caixa {
     display: block;
     width: 35rem;
-    height: 35rem;
     margin: auto;
 }
 .p-active-antiox {
