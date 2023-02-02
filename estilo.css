@@ -282,13 +282,12 @@ text-align: start;
     justify-content: center;
     margin: 2.5rem auto;
 }
-.lista-caixas li {
+.lista-caixas button {
     color: #a6a7a7;
     background: #e6e7e7;
     border-radius: 0.5rem;
     min-width: 10rem;
     padding: 1.5rem 2rem 0.5rem;
-    text-align: center;
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 500;
@@ -298,12 +297,14 @@ text-align: start;
     gap: 0.5rem;
     transition: all 0.3s;
     cursor: pointer;
+    border: none;
+    align-items: center;
 }
-.lista-caixas li:hover {
+.lista-caixas button:hover {
     background: #1fab36;
     color: white;
 }
-.lista-caixas li span {
+.lista-caixas button span {
     font-size: 4rem;
     font-weight: 500;
    
@@ -311,24 +312,28 @@ text-align: start;
 .caixa-de-precos {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+
     align-items: center;
     font-size: 1.8rem;
 }
 
-.caixa-de-precos p {
+.primeiroP, .segundoP {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    line-height: 2rem;
+    
     color: #484b57
 }
+.segundoP{
+    margin-top: 1rem;
+}
 
-.caixa-de-precos p span {
+.PspanA, .PspanB {
     font-weight: 300;
     color: #1fab36;
     font-size: 1.6rem;
 }
+
 .btn-comprar {
     background: var(--cor-1);
     text-decoration: none;
