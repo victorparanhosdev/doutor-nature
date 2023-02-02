@@ -72,7 +72,7 @@ class Caixinhas {
 
         
     }
-    removeAll(){
+    removeAll(value){
         this.lista.corpo.querySelectorAll('div').forEach(div => div.remove())
         
     }
