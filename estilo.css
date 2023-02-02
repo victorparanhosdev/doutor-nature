@@ -411,13 +411,11 @@ figure:has(p) p {
   font-size: 3rem;
 }
 
-.sec-5-caixa-duvidas > div > span {
-    cursor: pointer;
-}
+
 .sec-5-caixa-duvidas > div {
   padding: 1.5rem 0;
   border-bottom: 1px solid white;
-
+  cursor: pointer;
   width: min(98%, 80rem);
   margin: auto;
 }
@@ -441,7 +439,7 @@ figure:has(p) p {
     transition-timing-function: ease-in;
     visibility: visible;
     max-height: 40rem;
-    margin: 1rem auto auto 2.5rem;
+    margin: 1rem 2.5rem;
 }
 
 .icone {
