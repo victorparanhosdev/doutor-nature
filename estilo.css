@@ -159,7 +159,7 @@ nav {
   padding: 5rem 0;
 }
 
-#btn-confirm {
+.btn-confirm {
   appearance: none;
   border: 3px solid #fffd00;
   height: 2rem;
@@ -167,7 +167,7 @@ nav {
   box-shadow: 0.1rem 0.1rem 0.4rem 0px #000000d1;
   cursor: pointer;
 }
-#btn-confirm:checked {
+.btn-confirm:checked {
   background: url('./asset/check-icon-green.png') no-repeat;
   background-position: center center;
   background-size: 100%;
