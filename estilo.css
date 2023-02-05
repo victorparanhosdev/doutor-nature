@@ -620,7 +620,7 @@ footer {
   }
   .img-do-doutor {
     background: url('./asset/doutor-rafael-mobile.png') no-repeat;
-    background-position: top center;
+    background-position: center;
     position: static;
     width: 100vw;
     height: 20rem;
@@ -676,6 +676,7 @@ footer {
   .sec-5-caixa-duvidas > div {
     padding-left: 1rem;
   }
+
 }
 
 @media (min-width: 375px) and (max-width: 840px){
@@ -692,6 +693,7 @@ footer {
 :root {
   font-size: 64%;
 }
+
 
 }
 
@@ -724,13 +726,7 @@ footer {
   }
 
 
-  
-@media (max-width: 800px){
-    .img-do-doutor{
-      height: 18rem;
-    }
-   
-  }
+
 
 @media (max-width: 915px){
     .caixa-pacote > div:hover {
