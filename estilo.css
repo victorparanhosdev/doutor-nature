@@ -200,18 +200,17 @@ nav {
 }
 
 .lista-assinatura li {
-  position: relative;
-  padding: 1rem;
-  padding-left: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
   text-align: start;
 }
 .lista-assinatura li::before {
-  position: absolute;
+ 
   padding: 1rem;
   content: '';
   z-index: 2;
-  top: 0;
-  left: 0;
   display: block;
   height: 2rem;
   width: 2rem;
@@ -342,6 +341,7 @@ nav {
 }
 
 .title-h1 {
+  width: 98%;
   line-height: 4.5rem;
   max-width: 60rem;
   font-size: 4rem;
@@ -504,7 +504,7 @@ footer {
 }
 .container-footer {
   gap: 1rem;
-  max-width: 90rem;
+  width: min(98%, 90rem);
   margin: auto;
   display: grid;
   grid-template-areas:
@@ -544,9 +544,12 @@ footer {
 
     
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 800px) {
   :root {
     font-size: 56.5%;
+  }
+  .btn-duvidas {
+    font-size: 1.2rem;
   }
   .section-1 {
     background: url('./asset/background-mobile.jpg') no-repeat;
@@ -644,7 +647,7 @@ footer {
     margin-top: 2rem;
   }
   .caixa-pacote > div h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .container-2 div:nth-child(2) p {
     text-align: justify;
@@ -677,6 +680,53 @@ footer {
   }
 }
 
-@media (min-width: 375px) and (max-width: 768px){
+@media (min-width: 375px) and (max-width: 800px){
+  .caixa-pacote > div h1 {
+    font-size: 2rem;
+  }
+
+  .btn-duvidas {
+  font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 800px){
+:root {
+  font-size: 64%;
+}
 
 }
+
+
+@media (min-width: 540px) and (max-width: 800px){
+  :root {
+    font-size: 80%;
+  }
+  .img-selo-garantia{
+    width: 12rem;
+  }
+
+  .caixa-selo-garantia{
+    flex-direction: row;
+ 
+    font-size: 1.2rem;
+  }
+  .img-do-doutor{
+    height: 16rem;
+  }
+
+  }
+  
+  @media (min-width: 800px) and (max-width: 840px){
+    .caixa-pacote{
+      width: 98%;
+      margin-inline: auto;
+    }
+    .caixa-pacote > div{
+     width: min(97%, 38rem);
+    }
+    .caixa-doutornature{
+      width: 97%;
+      margin-inline: auto;
+    }
+  }
