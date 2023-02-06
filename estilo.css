@@ -33,6 +33,7 @@
   --cor-5: #f5f5f5;
 
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 ul {
   list-style: none;
@@ -85,10 +86,28 @@ nav {
   background-position: center center;
 }
 .btn-seta {
-  font-size: 2.3rem;
+  font-size: 3rem;
   cursor: pointer;
-  border: none;
-  background: transparent;
+  text-decoration: none;
+  color: black;
+  animation: setinha;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+@keyframes setinha {
+  from {
+    transform:scale(1.1) translateY(-20%);
+    
+  }
+  to {
+    transform: scale(1.2) translateY(40%)
+  }
+
 }
 .container-1 {
   max-width: 60rem;
@@ -106,7 +125,7 @@ nav {
   margin-bottom: 2.5rem;
 }
 
-.section-2 {
+#section-2 {
   position: relative;
   max-width: 82rem;
   margin: auto;
@@ -655,7 +674,7 @@ footer {
   .p-active-antiox {
     text-align: center;
   }
-  .section-2 {
+  #section-2 {
     padding: 1rem 0;
   }
   .legend-h1 {
@@ -723,16 +742,13 @@ footer {
     display: flex;
   }
 
-  }
-
-
-
+}
 
 @media (max-width: 915px){
     .caixa-pacote > div:hover {
       transform: scale(1);
     }
-  }
+}
 
 
 

@@ -2,8 +2,6 @@ import { Caixinhas } from './classes.js'
 new Caixinhas()
 
 
-
-
 const arraysDiv = document.querySelectorAll('.sec-5-caixa-duvidas .containers-duvidas')
 const PDuvida = document.querySelectorAll('.paragrafo-duvida')
 const icone = document.querySelectorAll('.icone')
